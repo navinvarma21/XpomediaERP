@@ -1,0 +1,206 @@
+.custom-breadcrumb {
+    padding: 0.5rem 1rem;
+  }
+  
+  .custom-breadcrumb a {
+    color: #0B3D7B;
+    text-decoration: none;
+  }
+  
+  .custom-breadcrumb .separator {
+    margin: 0 0.5rem;
+    color: #6c757d;
+  }
+  
+  .header-container {
+    background-color: #0B3D7B;
+    color: white;
+    padding: 1rem;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-container {
+    background-color: white;
+    padding: 1.5rem;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+  
+  .admission-form {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    color: #0B3D7B;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .form-control-blue {
+    background-color: #F0F4FF !important;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+  
+  .form-control-blue:focus {
+    border-color: #0B3D7B;
+    box-shadow: 0 0 0 0.2rem rgba(11, 61, 123, 0.25);
+  }
+  
+  .submit-btn {
+    background: linear-gradient(to bottom, #1565C0, #0B3D7B);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    min-width: 200px;
+  }
+  
+  .submit-btn:hover {
+    background: linear-gradient(to bottom, #1976D2, #1565C0);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .photo-upload-circle {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .photo-upload-circle:hover:not(:disabled) {
+    border-color: #0B3D7B;
+    background-color: #F8FAFF;
+  }
+  
+  .photo-upload-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .qr-code-container {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .form-label {
+    font-weight: 500;
+    color: #2D3748;
+  }
+  
+  input[type="date"].form-control-blue {
+    position: relative;
+    padding-right: 35px;
+  }
+  
+  input[type="date"].form-control-blue::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  
+  .fee-details-table table {
+    margin-bottom: 1rem;
+  }
+  
+  .fee-details-table th,
+  .fee-details-table td {
+    vertical-align: middle;
+    padding: 0.5rem;
+  }
+  
+  .fee-details-table thead {
+    background-color: #0B3D7B;
+    color: white;
+  }
+  
+  .fee-details-table tfoot td {
+    background-color: #f8f9fa;
+  }
+  
+  @media (max-width: 768px) {
+    .admission-form-container {
+      padding: 1rem;
+    }
+  
+    .section-title {
+      font-size: 1.1rem;
+    }
+  
+    .submit-btn {
+      width: 100%;
+    }
+  
+    .fee-details-table table {
+      font-size: 0.9rem;
+    }
+  }
+  
+  .form-check-input {
+    width: 3em;
+    height: 1.5em;
+    margin-top: 0.25em;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    transition: background-color 0.15s ease-in-out, background-position 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .form-check-input:checked {
+    background-color: #0B3D7B;
+    border-color: #0B3D7B;
+  }
+  
+  .form-check-input:focus {
+    border-color: #0B3D7B;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(11, 61, 123, 0.25);
+  }
+  
+  .form-switch .form-check-input {
+    width: 2.5em;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+    background-position: left center;
+    border-radius: 2em;
+    transition: background-position 0.15s ease-in-out;
+  }
+  
+  .form-switch .form-check-input:checked {
+    background-position: right center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  }
+  
+  .form-switch .form-check-label {
+    padding-left: 0.5rem;
+  }

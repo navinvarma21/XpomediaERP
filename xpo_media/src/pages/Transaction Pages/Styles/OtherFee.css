@@ -1,0 +1,44 @@
+/* OtherFee.css */
+
+.other-fee-container {
+    overflow-x: hidden;
+    white-space: normal;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+.other-fee-container .card, 
+.other-fee-container .form-control, 
+.other-fee-container .form-select, 
+.other-fee-container table {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+.other-fee-container table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .other-fee-container {
+        max-width: 100vw;
+        padding: 0 10px;
+    }
+
+    .other-fee-container .row {
+        margin: 0;
+    }
+
+    .other-fee-container .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .other-fee-container .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

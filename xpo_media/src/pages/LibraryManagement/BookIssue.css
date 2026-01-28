@@ -1,0 +1,151 @@
+/* BookIssue.css */
+
+.book-issue-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light Gray Background behind windows */
+    min-height: 80vh;
+}
+
+/* === SHARED WINDOW STYLES === */
+.retro-window {
+    width: 500px;
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Window Header (The Title Bar) */
+.window-header {
+    background: linear-gradient(to bottom, #d6dbe9 0%, #aeb9ce 100%);
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #888;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.window-title {
+    font-weight: bold;
+}
+
+.window-controls button {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    margin-left: 2px;
+    border: 1px solid #666;
+    background: #e1e1e1;
+    cursor: pointer;
+}
+.window-controls button.red {
+    background: #ff5555;
+    color: white;
+}
+
+/* Window Body (The Form Area) */
+.window-body {
+    padding: 15px;
+}
+
+/* Window Footer (The Buttons) */
+.window-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    background: #d4d0c8; /* Standard Windows Gray */
+    border-top: 1px solid #fff;
+}
+
+/* === SPECIFIC THEMES === */
+
+/* Left Window (Issue): Purple/Maroon Theme */
+.issue-window {
+    background-color: #700070; /* Deep Purple Background */
+}
+.issue-window .window-body {
+    background-color: #700070;
+}
+.issue-window label {
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Right Window (Return): Yellow/Green Theme */
+.return-window {
+    background-color: #808000; /* Olive/Green Background */
+}
+.return-window .window-body {
+    background-color: #808000;
+}
+.return-window label {
+    color: yellow; /* Yellow Text */
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* === INPUTS === */
+.retro-input {
+    height: 30px;
+    border: 2px inset #fff;
+    border-radius: 0;
+    font-size: 0.9rem;
+    background-color: white !important;
+}
+
+/* Qty Box (Small box on the right) */
+.qty-box {
+    background: #fff;
+    border: 2px inset #ccc;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.qty-box small {
+    font-size: 8px;
+    line-height: 1;
+}
+.qty-box input {
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+}
+
+/* === RETRO BUTTONS === */
+.retro-btn {
+    background: linear-gradient(to bottom, #f0f0f0 0%, #d4d0c8 100%);
+    border: 1px solid #888;
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 5px 15px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+.retro-btn:active {
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Return Buttons are Green Text */
+.return-window .retro-btn {
+    color: green;
+}
+.return-window .retro-btn:last-child {
+    color: magenta; /* Close button style */
+}

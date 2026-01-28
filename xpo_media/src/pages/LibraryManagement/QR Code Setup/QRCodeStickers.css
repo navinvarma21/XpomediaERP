@@ -1,0 +1,105 @@
+/* QRCodeStickers.css */
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-bottom: 2px solid #0d6efd;
+}
+
+.page-title {
+    color: #0d6efd;
+    font-weight: 700;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.form-card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.form-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.qr-display-section {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px dashed #ced4da;
+}
+
+.qr-info {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.qr-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.qr-input {
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    color: #0B3D7B;
+}
+
+.qr-image-container {
+    width: 120px;
+    height: 120px;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dee2e6;
+}
+
+.qr-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Animations */
+.animate__pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Table Styling */
+.table-responsive {
+    scrollbar-width: thin;
+}
+.font-monospace {
+    font-family: 'Courier New', monospace;
+}

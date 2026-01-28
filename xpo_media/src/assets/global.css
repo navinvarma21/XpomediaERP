@@ -1,0 +1,10 @@
+.custom-btn-clr {
+  background: linear-gradient(180deg, #1470E1 0%, #0B3D7B 100%);
+  border: none;
+  color: white;
+}
+
+.custom-btn-clr:hover {
+  background: linear-gradient(180deg, #0B3D7B 0%, #1470E1 100%);
+  color: white;
+}

@@ -1,0 +1,26 @@
+.fee-setup-card {
+    border-radius: 4.367px;
+    background: linear-gradient(180deg, #146fdf 0%, #0c4285 100%);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    min-height: 120px;
+    border: none;
+  }
+  
+  .fee-setup-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+  }
+  
+  .breadcrumb-item a {
+    color: #146fdf;
+  }
+  
+  .breadcrumb-item.active {
+    color: #6c757d;
+  }
+  
+  

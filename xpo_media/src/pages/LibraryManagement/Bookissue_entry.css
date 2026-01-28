@@ -1,0 +1,210 @@
+/* Bookissue_entry.css */
+
+/* Global Styles */
+.book-issue-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Step Progress */
+.issue-steps .step {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.issue-steps .step-icon {
+  border: 2px solid #dee2e6;
+  transition: all 0.3s;
+}
+
+.issue-steps .step.completed .step-icon {
+  background-color: #198754;
+  border-color: #198754;
+  color: white;
+}
+
+.issue-steps .step.active .step-icon {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(13, 110, 253, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(13, 110, 253, 0); }
+}
+
+/* Member Results */
+.member-results {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  padding: 10px;
+}
+
+.member-item {
+  padding: 10px;
+  border-bottom: 1px solid #dee2e6;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.member-item:hover {
+  background-color: #f8f9fa;
+}
+
+.member-item:last-child {
+  border-bottom: none;
+}
+
+.member-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.member-name {
+  font-weight: 600;
+  color: #212529;
+}
+
+.member-code {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+/* Placeholder Cards */
+.placeholder-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.placeholder-content {
+  text-align: center;
+}
+
+/* Scanner Placeholder */
+.scanner-placeholder {
+  border: 2px dashed #dee2e6;
+  border-radius: 0.375rem;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.scanner-frame {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Stat Box */
+.stat-box {
+  padding: 15px;
+  border-radius: 0.375rem;
+  background-color: #f8f9fa;
+}
+
+.stat-box h6 {
+  color: #6c757d;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-box h3 {
+  margin: 10px 0 0;
+  font-weight: 700;
+}
+
+/* Table Styles */
+.table th {
+  font-weight: 600;
+  color: #495057;
+  background-color: #f8f9fa;
+  border-bottom-width: 2px;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.075);
+}
+
+/* Action Buttons */
+.btn-action {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .issue-steps {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .issue-steps .step {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .stat-box {
+    margin-bottom: 15px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Loading States */
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  border-radius: inherit;
+}
+
+/* Animation for success */
+@keyframes successCheckmark {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.success-checkmark {
+  animation: successCheckmark 0.6s ease-in-out;
+}
+
+/* Badge custom styles */
+.badge-lg {
+  padding: 0.5em 0.8em;
+  font-size: 0.9em;
+  font-weight: 600;
+}
