@@ -17,7 +17,8 @@ import PaymentSetup from "../../pages/Administration Pages/MainPages/PaymentSetu
 import PaymenHeadSetup from "../../pages/Administration Pages/PaymentSetupPages/PaymentHeadSetup"
 import PaymentSubHeadSetup from "../../pages/Administration Pages/PaymentSetupPages/PaymentSubHeadSetup"
 import CertificatePreparation from "../../pages/Administration Pages/MainPages/CirtificatePreparation"
-import AttendanceCertificate from "../../pages/Administration Pages/CertificatePreparationPages/Attendancecertificate"
+// ✅ Fixed capitalization below: changed Attendancecertificate to AttendanceCertificate
+import AttendanceCertificate from "../../pages/Administration Pages/CertificatePreparationPages/AttendanceCertificate"
 import CourseCertificate from "../../pages/Administration Pages/CertificatePreparationPages/CourseCertificate"
 import ExperienceCertificate from "../../pages/Administration Pages/CertificatePreparationPages/ExperienceCertificate"
 import SubjectHead from "../../pages/Administration Pages/MainPages/SubjectHead"
