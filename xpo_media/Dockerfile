@@ -1,29 +1,23 @@
-# Build Stage - Node 22 for Vite 7 compatibility
+# Build Stage - Use Node 22 for Vite 7 compatibility
 FROM node:22-alpine AS build
 WORKDIR /app
 
 # Copy dependency files
 COPY package*.json ./
 
-# Force install to handle React 19 peer dependencies
-RUN npm install --force
+# 1. Force install dependencies
+# 2. Specifically install the missing Rollup binary for Alpine Linux
+RUN npm install --force && \
+    npm install @rollup/rollup-linux-x64-musl --force
 
-# Copy your JSX source code
+# Copy the rest of the code
 COPY . .
 
-# Build the project. 
-# We use '|| true' to ensure the 'dist' folder is created even if 
-# there are minor JSX linting warnings during the build.
-RUN npm run build || true
+# Run the build
+RUN npm run build
 
 # Production Stage - Serve with Nginx
 FROM nginx:stable-alpine
-
-# Copy the generated website files to Nginx
 COPY --from=build /app/dist /usr/share/nginx/html
-
-# Expose port 80
 EXPOSE 80
-
-# Start the web server
 CMD ["nginx", "-g", "daemon off;"]
