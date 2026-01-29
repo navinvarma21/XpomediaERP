@@ -9,10 +9,13 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Configuration
 public class DatabaseConfig {
-    // AWS RDS Connection Constants
-    public static final String AWS_DB_BASE_URL = "jdbc:mysql://db-xpomedia-erp.c58yeuaqk5wm.ap-south-2.rds.amazonaws.com:3306/";
+    // UPDATED: Mumbai RDS Connection Constants (ap-south-1)
+    public static final String AWS_DB_BASE_URL = "jdbc:mysql://xpomedia-db.cz0akso48444.ap-south-1.rds.amazonaws.com:3306/";
     public static final String AWS_DB_USER = "admin";
-    public static final String AWS_DB_PASS = "mysqlxpo26";
+    
+    // UPDATED: The password you confirmed for the Mumbai instance
+    public static final String AWS_DB_PASS = "xpomedia-db"; 
+    
     public static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 
     // Default URL params (SSL, Timezone, etc.)
