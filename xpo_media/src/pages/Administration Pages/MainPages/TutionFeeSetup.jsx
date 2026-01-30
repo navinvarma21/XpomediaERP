@@ -9,7 +9,7 @@ import { ENDPOINTS } from "../../../SpringBoot/config"
 import { useAuthContext } from "../../../Context/AuthContext"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
-import "../styles/style.css"
+import "../Styles/style.css"
 import * as XLSX from "xlsx"
 
 // Add Tuition Fee Modal Component
