@@ -9,7 +9,7 @@ import { useAuthContext } from "../../../Context/AuthContext"
 import { ENDPOINTS } from "../../../SpringBoot/config";
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
-import "../styles/style.css"
+import "../Styles/style.css"
 
 // Add SubHead Modal Component
 const AddSubHeadModal = ({ isOpen, onClose, onConfirm, mainHeads }) => {
