@@ -10,7 +10,7 @@ import { ENDPOINTS } from "../../../SpringBoot/config"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import * as XLSX from "xlsx" // For import/export functionality
-import "../styles/style.css"
+import "../Styles/style.css"
 
 // Add Payment Sub Head Modal Component
 const AddSubHeadModal = ({ isOpen, onClose, onConfirm, mainHeads }) => {
