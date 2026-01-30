@@ -11,7 +11,7 @@ import { ToastContainer, toast } from "react-toastify"
 import * as XLSX from "xlsx"
 import { ENDPOINTS } from "../../../SpringBoot/config"
 import "react-toastify/dist/ReactToastify.css"
-import "../styles/style.css"
+import "../Styles/style.css"
 
 // Add Fee Head Modal Component
 const AddFeeHeadModal = ({ isOpen, onClose, onConfirm }) => {
