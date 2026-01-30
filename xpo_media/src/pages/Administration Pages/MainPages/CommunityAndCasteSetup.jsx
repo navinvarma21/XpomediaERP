@@ -11,7 +11,7 @@ import "react-toastify/dist/ReactToastify.css"
 import * as XLSX from "xlsx"
 import axios from "axios"
 import { ENDPOINTS } from "../../../SpringBoot/config"
-import "../styles/style.css"
+import "../Styles/style.css"
 
 const BASE = `${ENDPOINTS.administration}/communityandcastesetup`
 const ADMIN_DOC_ID = "admin_doc"
