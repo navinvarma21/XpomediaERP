@@ -39,7 +39,7 @@ import {
   Info,
   Close,
 } from '@mui/icons-material';
-import workerScript from './timetableWorker.js';
+import workerScript from './timetableworker.js';
 
 const GenerateVerify = ({
   timetableData,
