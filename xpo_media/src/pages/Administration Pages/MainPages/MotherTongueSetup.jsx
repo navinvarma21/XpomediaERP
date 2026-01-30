@@ -10,7 +10,7 @@ import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import * as XLSX from "xlsx"
 import { ENDPOINTS } from "../../../SpringBoot/config"
-import "../styles/style.css"
+import "../Styles/style.css"
 
 // Add Mother Tongue Modal Component
 const AddMotherTongueModal = ({ isOpen, onClose, onConfirm }) => {
